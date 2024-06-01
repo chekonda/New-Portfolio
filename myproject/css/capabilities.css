@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .flex {
+        flex-direction: row;
+    }
+}
+
+.flex > div {
+    flex: 1;
+    margin: 0 10px; /* Adjust this value to increase or decrease the gap */
+}
+
+ul {
+    list-style-type: none; /* This removes the bullet points */
+    text-align: center; /* This centers the text */
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+} 
+
+ul{
+    color: rgba(255, 255, 255, 0.60);
+}

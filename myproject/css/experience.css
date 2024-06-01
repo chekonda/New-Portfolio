@@ -1,0 +1,122 @@
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #079aef;
+}
+
+.timeline-item {
+    position: relative;
+    width: calc(50% - 30px);
+    margin: 30px 0;
+}
+
+.timeline-item .timeline-icon {
+    position: absolute;
+    top: 0;
+    left: calc(50% + 30px);
+    width: 20px;
+    height: 20px;
+    /* margin: -100px 0 0 -10px; */
+    /* border-radius: 50%; */
+    /* background: #f6f6f6; */
+}
+
+.timeline-item .timeline-content {
+    position: relative;
+    margin-left: 60px;
+    padding: 20px;
+    background: #fcfcfc;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 2, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* .timeline-item .timeline-content:hover {
+    background-color: #f2f2f2;
+} */
+.bullet-points {
+    list-style-type: disc; /* This sets the bullet points to be disc-shaped */
+    margin-left: 20px; /* This adds some space between the bullet points and the text */
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    background-color: rgba(231, 228, 228,);
+}
+
+.timeline-item.right .timeline-content {
+    margin-left: 0;
+    margin-right: 60px;
+}
+
+.timeline-item .timeline-content .date {
+    color: #222812;
+    /* font-size: 0.6em; */
+    
+}
+
+
+.date{
+    font-size: 0.9rem;
+}
+
+p1{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    #about{
+        left:0;
+    }
+    .timeline::before {
+        left: 0px;
+    }
+
+    .timeline-item {
+        width: calc(100% - 5px);
+    }
+
+    .timeline-item .timeline-icon {
+        left: 0;
+    }
+
+    .timeline-item .timeline-content {
+        margin-left: 20px;
+    }
+
+    .timeline-item.right .timeline-content {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .date{
+        font-size: 0.9rem;
+    }
+    .p1{
+        font-size: 1.8rem;
+    }
+    .exp{
+        font-size: 1.25rem;
+    }
+}
+
+
+
+
+/* Add a media query to adjust the position when screen size is more than 900px */
+@media (min-width: 900px) {
+    #right {
+        position: relative; 
+        left: 53%; 
+    }
+   
+}

@@ -1,0 +1,319 @@
+/* You can place this CSS in your existing CSS file or create a new one */
+#about {
+    /* height: 1000px; Default height for large screens */
+    height: 400px;
+    margin:1rem;
+
+}
+
+
+#about p {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#about p.show {
+    opacity: 1;
+}
+.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  
+    100% { transform: rotate( 0.0deg) }
+  }
+  .wave {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 2rem;
+  }
+
+/* Adjust height for medium screens */
+@media screen and (max-width: 1024px) {
+    #about {
+        height: 400px; /* Adjust height for medium screens */
+    }
+}
+
+/* Adjust height for small screens */
+@media screen and (max-width: 767px) {
+    #about {
+        height: 875px; /* Adjust height for small screens */
+    }
+   
+}
+/* Adjust font sizes for smaller screens */
+@media screen and (max-width: 767px) {
+ 
+    .text-lg {
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+    
+    .text-primarydark {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+    
+    .text-3xl {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+    
+    .md-text-4xl {
+        font-size: 1.75rem; /* Adjust font size for small screens */
+    }
+    
+    .mb-4 {
+        margin-bottom: 0.5rem; /* Adjust margin for small screens */
+    }
+    
+    .mb-6 {
+        margin-bottom: 1rem; /* Adjust margin for small screens */
+    }
+}
+
+/* Center content for smaller screens */
+@media screen and (max-width: 767px) {
+    .w-full {
+        text-align: center; /* Center text for small screens */
+    }
+    
+    .image-container {
+        text-align: center; /* Center image for small screens */
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+.pb-64 {
+    padding-bottom: 0rem; /* Adjust as needed */
+    padding-top: 5rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.md-pb-0 {
+    padding-bottom: 0; /* Remove padding on medium screens */
+}
+
+.sm-w-11\/12 {
+    width: 91.666667%; /* 11/12 */
+}
+
+.md-ml-0 {
+    margin-left: 0; /* Remove left margin on medium screens */
+}
+
+.md-mr-auto {
+    margin-right: auto; /* Center horizontally on medium screens */
+}
+
+.md-w-8\/12 {
+    width: 66.666667%; /* 8/12 */
+}
+
+.lg-w-7\/12 {
+    width: 58.333333%; /* 7/12 */
+}
+
+.relative {
+    position: relative;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Adjust as needed */
+}
+
+.sm-text-xl {
+    font-size: 1.25rem; /* Adjust as needed */
+}
+
+.md-text-2xl {
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+.text-primarygray {
+    color:rgba(255, 255, 255, 0.60);; /* Adjust as needed */
+}
+
+.text-primarydark {
+    color: #ffffff; /* Adjust as needed */
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+.text-3xl {
+    font-size: 1.875rem; /* Adjust as needed */
+}
+
+.md-text-4xl {
+    font-size: 2.25rem; /* Adjust as needed */
+}
+
+.mb-4 {
+    margin-bottom: 1rem; /* Adjust as needed */
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem; /* Adjust as needed */
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.button--primary,
+.button--transparent {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Adjust as needed */
+    border: none;
+    border-radius: 2rem; /* Adjust as needed */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold; 
+}
+
+.button--primary {
+    background-color: #09f; /* Adjust as needed */
+    color: #121212;
+    font-weight: bold; /* Adjust as needed */
+}
+
+
+
+.button--primary:hover {
+    background-color: #2C5282; /* Adjust as needed */
+}
+
+.button--transparent {
+    background-color: transparent;
+    border: 1px; /* Adjust as needed */
+    color: #09f; /* Adjust as needed */
+    font-weight: bold;
+}
+
+.button--transparent:hover {
+    background-color: #E2E8F0; /* Adjust as needed */
+}
+/* Styles for medium and large screens */
+/* .about-content {
+    display: flex;
+}
+
+/* Styles for small screens */
+/* @media screen and (max-width: 767px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content > div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .about-content img {
+        max-width: 100%;
+    }
+}  */
+/* You can place this CSS in your existing CSS file or create a new one */
+/* You can place this CSS in your existing CSS file or create a new one */
+
+
+
+
+/* 
+.container {
+    position: relative;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__image {
+    max-width: 80%; 
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 80%;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+@media screen and (max-width: 767px) {
+    .image-container {
+        position: static;
+        display: block;
+        margin-top: 1rem;
+    }
+} */
+
+
+.intro__image {
+    position: absolute;
+    top: -25px;
+    right: -110px;
+    max-width: 50%; /* Adjust the width as needed */
+    /* height: auto; */
+    max-height: 595px;
+}
+
+/* Additional styles for smaller screens */
+@media screen and (max-width: 767px) {
+    .intro__image {
+        position: static;
+        display: block;
+        margin-top: 1rem; /* Adjust margin as needed */
+        max-width: 100%; /* Reset width for smaller screens */
+    }
+}
+@media screen and (min-width: 767px) {
+    .intro__image {
+
+        margin-top: 1rem; /* Adjust margin as needed */
+    }
+}
+@media screen and (min-width: 768px){
+    #about {
+        height: 500px; /* Adjust height for small screens */
+    }
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+      
+}
