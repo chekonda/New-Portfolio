@@ -311,16 +311,6 @@
     }
 
 }
-@media screen and (min-width: 80px) {
-    .intro__image {
-
-        margin-top: -10rem;
-       max-height: 650px;/* Adjust margin as needed */
-    }
-    #about {
-        height: 400px; /* Adjust height for small screens */
-    }
-}
 *{
     margin:0;
     padding: 0;
